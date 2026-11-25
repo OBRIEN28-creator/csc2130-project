@@ -1,0 +1,396 @@
+/* =========================
+   PLANIFY - GLOBAL STYLES
+========================= */
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8FAFC;
+    color: #1E293B;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+nav {
+    background-color: #1E3A8A;
+    padding: 15px 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #93C5FD;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px 25px;
+}
+
+/* Main heading */
+
+main > h1 {
+    text-align: center;
+    color: #1E3A8A;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Introductory paragraphs */
+
+main > p {
+    text-align: center;
+    margin-bottom: 12px;
+    color: #475569;
+}
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+
+main section,
+main article {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+main h2,
+main h3 {
+    color: #1E3A8A;
+    margin-bottom: 15px;
+}
+
+main h4 {
+    color: #334155;
+    margin: 15px 0 8px;
+}
+
+/* =========================
+   LIST STYLING
+========================= */
+
+main ul,
+main ol {
+    padding-left: 25px;
+}
+
+main li {
+    margin-bottom: 8px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+/* =========================
+   HOMEPAGE IMAGE
+========================= */
+
+main > img {
+    display: block;
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+
+/* =========================
+   TECHNICAL TERMS
+========================= */
+
+main dl dt {
+    font-weight: bold;
+    color: #1E3A8A;
+    margin-top: 12px;
+}
+
+main dl dd {
+    color: #64748B;
+    margin-left: 20px;
+}
+
+/* =========================
+   STUDY VIDEO SECTION
+========================= */
+
+#study-video {
+    text-align: center;
+}
+
+#study-video p {
+    color: #64748B;
+    margin-bottom: 20px;
+}
+
+#study-video iframe {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 20px auto;
+    border: none;
+    border-radius: 12px;
+}
+
+/* =========================
+   TIMETABLE STYLING
+========================= */
+
+#timetable {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* Timetable description */
+
+#timetable p {
+    color: #67778f;
+    margin-bottom: 20px;
+}
+
+/* Table container */
+
+#timetable table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Table caption */
+
+#timetable caption {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E3A8A;
+    padding: 15px;
+}
+
+/* Table headings */
+
+#timetable thead {
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+}
+
+#timetable th {
+    padding: 16px;
+    text-align: left;
+}
+
+/* Table cells */
+
+#timetable td {
+    padding: 15px;
+    border-bottom: 1px solid #E2E8F0;
+    color: #475569;
+}
+
+/* Alternating row colours */
+
+#timetable tbody tr:nth-child(even) {
+    background-color: #EFF6FF;
+}
+
+/* Hover effect */
+
+#timetable tbody tr:hover {
+    background-color: #DBEAFE;
+}
+
+/* =========================
+   RESPONSIVE TIMETABLE
+========================= */
+
+#timetable {
+    overflow-x: auto;
+}
+
+#timetable table {
+    min-width: 600px;
+}
+
+/* =========================
+   STUDENT REGISTRATION
+========================= */
+
+#student-registration {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* Form layout */
+
+#student-registration form {
+    max-width: 600px;
+    margin: 25px auto 0;
+}
+
+/* Form labels */
+
+#student-registration label {
+    display: block;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+/* Input fields and dropdown */
+
+#student-registration input,
+#student-registration select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #334155;
+    background-color: #FFFFFF;
+    outline: none;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+
+#student-registration input:focus,
+#student-registration select:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Register button */
+
+#student-registration button {
+    width: 100%;
+    padding: 13px;
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+
+#student-registration button:hover {
+    background-color: #3B82F6;
+}
+
+/* =========================
+   STUDY SESSION PLANNER
+========================= */
+
+#study-planner {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* Form layout */
+
+#study-planner form {
+    max-width: 600px;
+    margin: 25px auto 0;
+}
+
+/* Form labels */
+
+#study-planner label {
+    display: block;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+/* Input fields and textarea */
+
+#study-planner input,
+#study-planner textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: #334155;
+    background-color: #FFFFFF;
+    outline: none;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Textarea */
+
+#study-planner textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Input focus effects */
+
+#study-planner input:focus,
+#study-planner textarea:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Schedule button */
+
+#study-planner button {
+    width: 100%;
+    padding: 13px;
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+
+#study-planner button:hover {
+    background-color: #3B82F6;
+}

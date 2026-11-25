@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>My CSC2130 Project</title>
 </head>
 <body>
@@ -29,10 +30,10 @@
             <p>Student Name: Brian Ojal</p>
             <p>Registration Number: COM/0090/25.</p>
             <p>Project Idea: University Student Resource Hub and Study Planner </p>
-            <br>
+           
             <hr>
             
-            <p>Welcome to the university resource Hub and Study Planner</p>
+            <h2>Welcome to the university resource Hub and Study Planner</h2>
             <section>
                 <h2>Features</h2>
                 <ul>
@@ -108,7 +109,7 @@
         <section id="timetable">
             <h2>My Class Timetable</h2>
             <p>Below is a personalized student's weekly lecture schedule:</p>
-            <table border="1">
+            <table >
                 <caption>Weekly University Lecture Schedule</caption>
                 <thead>
                     <tr>
@@ -156,7 +157,7 @@
         </section>
         
 
-<section id="student-registration">
+    <section id="student-registration">
     <h2>Student Registration</h2>
 
     <p>Create your student profile to get started with Planify.</p>
@@ -166,22 +167,22 @@
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname" required>
 
-        <br><br>
+        
 
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
 
-        <br><br>
+       
 
         <label for="regnumber">Registration Number:</label>
         <input type="text" id="regnumber" name="regnumber" required>
 
-        <br><br>
+        
 
         <label for="course">Course:</label>
         <input type="text" id="course" name="course" required>
 
-        <br><br>
+        
 
         <label for="year">Year of Study:</label>
         <select id="year" name="year" required>
@@ -192,7 +193,7 @@
             <option value="4">Year 4</option>
         </select>
 
-        <br><br>
+        
 
         <button type="submit">Register</button>
 
@@ -210,34 +211,34 @@
         <label for="subject">Subject/Unit:</label>
         <input type="text" id="subject" name="subject" required>
 
-        <br><br>
+        
 
         <label for="topic">Study Topic:</label>
         <input type="text" id="topic" name="topic" required>
 
-        <br><br>
+        
 
         <label for="study-date">Study Date:</label>
         <input type="date" id="study-date" name="study-date" required>
 
-        <br><br>
+        
 
         <label for="start-time">Start Time:</label>
         <input type="time" id="start-time" name="start-time" required>
 
-        <br><br>
+        
 
         <label for="duration">Duration (minutes):</label>
         <input type="number" id="duration" name="duration"
                min="15" max="300" required>
 
-        <br><br>
+        
 
         <label for="notes">Additional Notes:</label>
         <textarea id="notes" name="notes" rows="4"
                   placeholder="Enter your study goals or notes..."></textarea>
 
-        <br><br>
+       
 
         <button type="submit">Schedule Study Session</button>
 
